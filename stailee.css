@@ -1,0 +1,695 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Header */
+.header{
+    display: flex;
+    background-color: black;
+    padding: 0px 45px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+img.logo{
+    width: 75px;
+}
+
+.menu_nav{
+    list-style: none;
+    font-size: 18px;
+    /* margin-right: 50px; */
+}
+
+.menu_nav li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+li.active a{
+    color: rgb(1, 157, 247);
+}
+
+li a:hover{
+    color: rgb(151, 151, 151);
+}
+/* End of Header */
+
+
+/* Content */
+/* Beranda Item */
+.beranda-header{
+    display: flex;
+    min-height: 500px;
+    background:
+        linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+        ), url("img/berjalan.jpeg");
+    background-size: cover;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+.beranda-header .dark{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    /* background-color: rgba(0, 0, 0, .5); */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.beranda-header .dark h1{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 50px;
+    margin: -10px;
+}
+
+.beranda-header .dark h3{
+    font-size: 20px;
+}
+
+.dark span.biru{
+    color: rgb(1, 157, 247);
+}
+
+.beranda-article{
+    display: flex;
+    min-height: 550px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 65px 150px 100px;
+}
+
+.beranda-article h2{
+    display: inline-block;
+    width: 100%;
+    font-family: 'Bree Serif', serif;;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 70px;
+}
+
+div.beranda-article.dua{
+    background-color: black;
+    color: white;
+    flex-direction: row-reverse;
+}
+
+.article-content{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    align-items: center;
+}
+
+.beranda-article.satu img{
+    min-width: 500px;
+    max-width: 25%;
+    margin: 0px 20px 10px 0px;
+}
+
+.beranda-article.dua img{
+    min-width: 500px;
+    max-width: 25%;
+    margin: 0px 0px 10px 20px;
+}
+
+.beranda-article.dua .right{
+    text-align: right;
+}
+/* End of Beranda */
+
+/* Profil Item */
+.profil-header{
+    min-height: 350px;
+    padding: 70px 100px 100px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+        ), url("img/selesai.jpeg");
+    background-size: cover;
+    background-position-y: -190px;
+    color: white;
+}
+
+.profil-header .text p{
+    text-align: justify;
+}
+
+.profil-header .text h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 70px;
+}
+
+.profil-header .text span{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 39px;
+}
+
+.biru{
+    color: rgb(1, 157, 247);
+}
+
+.profil-article{
+    padding: 100px;
+}
+
+.profil-article h2{
+    font-size: 28px;
+    text-align: center;
+}
+
+.twin{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+    padding: 100px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.twin h2{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+}
+
+.twin p{
+    text-align: justify;
+}
+
+.profil-article.usaha{
+    background-color: black;
+    color: white;
+    padding: 70px 100px;
+    min-height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.profil-article.usaha span{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 39px;
+}
+
+.profil-article.usaha .text{
+    display: flex;
+    text-align: justify;
+}
+
+.profil-article.usaha img{
+    width: 500px;
+    margin-right: 50px;
+}
+
+.profil-article.usaha h2{
+    margin-bottom: 30px;
+}
+/* End of Profil*/
+/* Manajemen */
+.manajemen-header{
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    min-height: 350px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+        ), url("img/manajemen.jpg");
+    background-size: cover;
+    background-position-y: -100px;
+    padding: 70px 150px;
+    text-align: justify;
+    color: white;
+    /* align-items: center; */
+    align-content: center;
+    justify-content: center;
+}
+
+.manajemen-header h2{
+    text-align: left;
+    /* margin-left: -50px; */
+    margin-bottom: 50px;
+    font-size: 32px;
+}
+
+.manajemen-header span{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 39px;
+}
+
+.manajemen-header .biru{
+    color: rgb(1, 157, 247);
+}
+
+.komisaris{
+    display: grid;
+    grid-template-areas:
+    "Judul Judul"
+    "Utama Independen";
+    padding: 100px 100px;
+    column-gap: 100px;
+    align-content: space-between;
+}
+
+.komisaris .utama{
+    grid-area: Utama;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    border-radius: 10px;
+}
+
+.komisaris .independen{
+    grid-area: Independen;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    border-radius: 10px;
+}
+
+.direksi{
+    display: grid;
+    grid-template-areas:
+    "Judul Judul Judul"
+    "Utama Direktur Direktur2";
+    padding: 100px 50px;
+    column-gap: 10px;
+    justify-content: space-around;
+    background-color: black;
+    color: black;
+}
+
+.direksi h1{
+    grid-area: Judul;
+    text-align: center;
+    color: white;
+}
+
+.direksi .utama{
+    grid-area: Utama;
+    width: 350px;
+    display: flex;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.direksi .direktur{
+    grid-area: Direktur;
+    width: 350px;
+    display: flex;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.direksi .direktur2{
+    grid-area: Direktur2;
+    width: 350px;
+    display: flex;
+    margin-top: 150px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.komisaris .judul, .direksi .judul{ /*Komisaris dan Direksi H1*/
+    grid-area: Judul;
+    margin: 0 auto 90px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profpic{ /* Foto Dewan */
+    width: 250px;
+    margin-top: -175px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.nama{ /* Nama Dewan */
+    margin-top: 50px;
+    margin-bottom: -15px;
+    text-transform: uppercase;
+}
+
+.kalimat{ /* Biodata Dewan */
+    margin-top: -10px;
+    text-align: justify;
+}
+/* End of Manajemen*/
+/* Proyek */
+.proyek-header{
+    display: flex;
+    min-height: 350px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+        ), url("img/header-proyekk.jpg");
+    background-size: cover;
+    background-position-y: -120px;
+    padding: 70px 150px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyek-header h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+.proyek-header span{
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 39px;
+}
+
+.proyek-header .biru{
+    color: rgb(1, 157, 247);
+}
+
+.komersial{
+    display: grid;
+    grid-template-areas:
+    "Judul Judul"
+    "Satu Dua";
+    padding: 100px 100px;
+    column-gap: 100px;
+    align-content: space-between;
+}
+
+.komersial h2{
+    grid-area: Judul;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: -20px auto 50px;
+}
+
+.komersial .gambar-content.satu{
+    grid-area: Satu;
+}
+
+.komersial .gambar-content.dua{
+    grid-area: Dua;
+}
+
+.komersial .gambar-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.komersial .gambar-content p{
+    display: inline-block;
+    width: 400px;
+    min-height: 200px;
+    background-color: rgb(59, 59, 59);
+    margin-top: -50px;
+    padding: 30px 20px 30px;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.komersial .gambar-content span{
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.komersial .gambar-content img{
+    width: 500px;
+    margin-top: -175px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.transportasi{
+    display: grid;
+    grid-template-areas: 
+    "Judul Gambar";
+    grid-template-columns: .9fr 1.1fr;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.55), 
+        rgba(0, 0, 0, 0.55)
+        ), url("img/ampera.jpg");
+    background-size: cover;
+    background-position-y: -100px;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    padding: 30px 50px;
+}
+
+.transportasi .judul-proyek{
+    grid-area: Judul;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.transportasi .gambar{
+    grid-area: Gambar;
+}
+
+.transportasi .gambar-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.transportasi .gambar-content span{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.transportasi .gambar-content img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.transportasi .gambar-content.satu p,
+.transportasi .gambar-content.tiga p{
+    margin-left: 20px;
+}
+
+.transportasi .gambar-content.dua p{
+    margin-right: 20px;
+}
+
+.perumahan{
+    display: grid;
+    grid-template-areas:
+    "Judul Judul"
+    "Satu Dua"
+    "Tiga Empat";
+    padding: 100px 100px;
+    column-gap: 100px;
+    align-content: space-between;
+}
+
+.perumahan h2{
+    grid-area: Judul;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: -20px auto 50px;
+}
+
+.perumahan .gambar-content.satu{
+    grid-area: Satu;
+}
+
+.perumahan .gambar-content.dua{
+    grid-area: Dua;
+}
+
+.perumahan .gambar-content.tiga{
+    grid-area: Tiga;
+}
+
+.perumahan .gambar-content.empat{
+    grid-area: Empat;
+}
+
+.perumahan .gambar-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.perumahan .gambar-content p{
+    display: inline-block;
+    width: 400px;
+    min-height: 200px;
+    background-color: rgb(59, 59, 59);
+    margin-top: -50px;
+    padding: 30px 20px 30px;
+    border-radius: 20px;
+    text-align: justify;
+}
+
+.perumahan .gambar-content span{
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.perumahan .gambar-content img{
+    width: 500px;
+    margin-top: -175px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.industrial{
+    display: grid;
+    grid-template-areas: 
+    "Gambar Judul";
+    grid-template-columns: 1.1fr .9fr;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.55), 
+        rgba(0, 0, 0, 0.55)
+        ), url("img/industrial.jpg");
+    background-size: cover;
+    background-position-y: -100px;
+    color: white;
+    align-items: center;
+    justify-items: center;
+    padding: 30px 50px;
+}
+
+.industrial .judul-proyek{
+    grid-area: Judul;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.industrial .gambar{
+    grid-area: Gambar;
+}
+
+.industrial .gambar-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.industrial .gambar-content span{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.industrial .gambar-content img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.industrial .gambar-content.satu p{
+    margin-left: 20px;
+}
+
+.industrial .gambar-content.dua p{
+    margin-right: 20px;
+}
+
+
+/* End of Proyek */
+
+/* End of Content */
+
+/* Footer */
+.footer{
+    display: grid;
+    grid-template-areas:
+    "C2 C3"
+    "Copyr Copyr";
+    padding: 70px 70px 30px;
+}
+
+.c2{
+    grid-area: C2;
+}
+
+.c3{
+    grid-area: C3;
+}
+
+.copy{
+    grid-area: Copyr;
+    text-align: center;
+    font-weight: bold;
+}
+
+.col{
+    margin: 0 30px 70px;
+    text-align: justify;
+}
+
+/* .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    text-align: center;
+    height: 10%;
+} */
+
+.footer a{
+    color: rgb(1, 157, 247);
+    text-decoration: none;
+}
+/* End of Footer */
