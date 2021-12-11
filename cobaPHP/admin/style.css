@@ -1,0 +1,22 @@
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+nav.navbar{
+    background-color: black;
+    font-size: 17px;
+    padding: 0;
+}
+
+.logo{
+    width: 65px;
+}
+
+.right{
+    position: absolute;
+    right: 20px;
+}
+
+body div.container{
+    margin-top: 100px;
+}
