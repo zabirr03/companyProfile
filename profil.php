@@ -7,7 +7,7 @@ $artikel = $artikel[2];
 ?>
 
 <head>
-  <title>ALSUD CORPORATION - Profil</title>
+  <title>ALSUD CORPORATIONS - Profil</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
